@@ -1,0 +1,310 @@
+/* make font bigger when 中文 selected */
+body.lang_tw {
+    font-size: 1.6em;
+}
+
+/*whats this?? still used?*/
+.hero {
+    background-color: grey;
+    color: rgb(255,255,255);
+}
+
+
+header {
+  padding: 0px;
+  background-color: rgb(48,48,48);
+  color: white;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.headerP {
+    padding: 30px 20px;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+
+a h1 {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover, header a:focus {
+    color: darkcyan;  /*hover clr*/
+    text-decoration: none;
+}
+
+footer {
+    font-size: 12px;
+    padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}
+
+.container-fluid.expander {
+    background-color: lightseagreen;
+    color: white;
+    padding-left: 40px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.expanderText {
+    font-size: 20px;
+    margin: 2.5px;
+}
+
+
+
+ /* Dropdown Button */
+.dropbtn {
+    background-color: rgb(48,48,48);
+    color: white;
+    margin: 25px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: darkcyan;  /*hover clr*/
+}
+
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/*show Language dropdown if hover over 文*/
+.dropdown:hover #myDropdown {
+    display: block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+/*BG Jumbo JA*/
+
+.jumbotron.JA {
+    background-image: url("http://1gr.cz/fotky/idnes/13/023/org/JBS495b75_Nuselsky_most_14B_701127.jpg");
+    height: 400px;
+    background-size: 100% auto;
+    background-position: center;
+}
+
+/*Accordion*/
+
+//updated ver
+* {
+  box-sizing:border-box;
+}
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+body { 
+
+  font-family:'Lato';
+}
+
+}
+.accordion dl,
+.accordion-list {
+   border:1px solid #ddd;
+   &:after {
+       content: "";
+       display:block;
+       height:1em;
+       width:100%;
+       background-color:darken(#20B2AA, 10%);
+     }
+}
+.accordion dd,
+.accordion__panel {
+   background-color:#eee;
+   font-size:1em;
+   line-height:1.5em; 
+}
+.accordion p {
+  padding:1em 2em 1em 2em;
+}
+
+.accordion {
+    position:relative;
+    background-color:#eee;
+}
+.container {
+  max-width:960px;
+  margin:0 auto;
+  padding:2em 0 2em 0;
+}
+.accordionTitle,
+.accordion__Heading {
+ background-color:#20B2AA; 
+   text-align:center;
+     font-weight:700; 
+          padding:2em;
+          display:block;
+          text-decoration:none;
+          color:#fff;
+          transition:background-color 0.5s ease-in-out;
+  border-bottom:1px solid darken(#20B2AA, 5%);
+  &:before {
+   content: "+";
+   font-size:1.5em;
+   line-height:0.5em;
+   float:left; 
+   transition: transform 0.3s ease-in-out;
+  }
+  &:hover {
+    background-color:darken(#20B2AA, 10%);
+  }
+}
+.accordionTitleActive, 
+.accordionTitle.is-expanded {
+   background-color:darken(#20B2AA, 10%);
+    &:before {
+     
+      transform:rotate(-225deg);
+    }
+}
+.accordionItem {
+    height:auto;
+    overflow:hidden; 
+    //SHAME: magic number to allow the accordion to animate
+    
+     max-height:50em;
+    transition:max-height 1s;   
+ 
+    
+    @media screen and (min-width:48em) {
+         max-height:15em;
+        transition:max-height 0.5s
+        
+    }
+    
+   
+}
+ 
+.accordionItem.is-collapsed {
+    max-height:0;
+}
+.no-js .accordionItem.is-collapsed {
+  max-height: auto;
+}
+.animateIn {
+     animation: accordionIn 0.45s normal ease-in-out both 1; 
+}
+.animateOut {
+     animation: accordionOut 0.45s alternate ease-in-out both 1;
+}
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    transform:scale(0.9) rotateX(-60deg);
+    transform-origin: 50% 0;
+  }
+  100% {
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
+@keyframes accordionOut {
+    0% {
+       opacity: 1;
+       transform:scale(1);
+     }
+     100% {
+          opacity:0;
+           transform:scale(0.9) rotateX(-60deg);
+       }
+}
+
+.article-box { 
+    margin: 80px;
+    padding: 30px 20px 20px 20px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+}
+
+.article-container {
+    margin: 20px;
+    background-color: rgb(240,240,240);
+    padding: 30px 20px;
+    color: #333;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+}
+
+.container-article {
+    margin: 20px;
+    background-color: rgb(240,240,240);
+    padding: 30px 20px;
+    color: #333;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;   
+}
+
+/*Share Button*/
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+ul.share-buttons .sr-only {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}

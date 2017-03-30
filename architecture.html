@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Architecture</title>
+    <meta charset=“utf-8”/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/lang.js"></script>
+</head>
+
+<!--Header-->
+
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <a href="/index.html"><h1 class="col-sm-4" href="index.html">Colours to Life</h1></a>
+            <nav class="col-sm-8">
+                <a class="headerP" href="/architecture.html" tkey="architecture"></a>
+                <a class="headerP" href="#" tkey="graphicart"></a>
+                <a class="headerP" href="/music.html" tkey="music"></a>
+                <a class="headerP" href="#" tkey="languages"></a>
+                <a class="headerP" href="#" tkey="contact"></a>
+                <div class="dropdown">
+                    <button class="dropbtn">文</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a langSel="en">English</a>
+                        <a langSel="cz">Česky</a>
+                        <a langSel="de">Deutsch</a>
+                        <a langSel="es">Español</a>
+                        <a langSel="tw">中文</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="jumbotron JA">
+    </section>
+
+    <!--  ACCORDEON-->
+    <div class="container-fluid">
+        <div class="accordion">
+            <dl>
+                <dt>
+                <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger" tkey="cv"></a>
+              </dt>
+                <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
+                    <p>Text 1</p>
+                    <p>Text 2</p>
+                </dd>
+                <dt>
+                <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger" tkey="awards">
+                </a>
+              </dt>
+                <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
+                    <h3>Taichung Earth God Temple - Honorable Mention</h3>
+                    <p>Blablabla</p>
+                </dd>
+                <dt>
+                <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger" tkey="portfolio">
+                </a>
+              </dt>
+                <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+                    <p>Text 1</p>
+                    <p>Text 2</p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+</body>
+
+</html>
