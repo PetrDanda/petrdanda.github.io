@@ -12,7 +12,7 @@ body.lang_tw {
 
 header {
   padding: 0px;
-  background-color: rgb(48,48,48);
+  background-color: #f26d7d;    /* before was rgb(48,48,48)  */
   color: white;
 }
 
@@ -78,7 +78,7 @@ footer li img {
 
  /* Dropdown Button */
 .dropbtn {
-    background-color: rgb(48,48,48);
+    background-color: #f26d7d;    /* before was rgb(48,48,48)  */ 
     color: white;
     margin: 25px;
     font-size: 16px;
@@ -88,7 +88,8 @@ footer li img {
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
-    background-color: darkcyan;  /*hover clr*/
+    background-color: white;  /*hover clr*/
+    color: #f26d7d;
 }
 
 }
@@ -101,6 +102,7 @@ footer li img {
 /*show Language dropdown if hover over 文*/
 .dropdown:hover #myDropdown {
     display: block;
+    z-index: 10;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -134,6 +136,8 @@ footer li img {
     height: 400px;
     background-size: 100% auto;
     background-position: center;
+    background-repeat: no-repeat;
+    display: compact;
 }
 
 /*Accordion*/
@@ -164,7 +168,7 @@ body {
 .accordion__panel {
    background-color:#eee;
    font-size:1em;
-   line-height:1.5em; 
+   line-height:1.2em; 
 }
 .accordion p {
   padding:1em 2em 1em 2em;
@@ -172,19 +176,21 @@ body {
 
 .accordion {
     position:relative;
-    background-color:#eee;
+    background-color:#eee;   /*before was #eee*/
+    margin-top: 20px;
+    z-index: 5;
 }
 .container {
   max-width:960px;
   margin:0 auto;
-  padding:2em 0 2em 0;
+  padding:2em 2em 0 0;
 }
 .accordionTitle,
 .accordion__Heading {
  background-color:#20B2AA; 
    text-align:center;
-     font-weight:700; 
-          padding:2em;
+     font-weight:500; 
+          padding:1em;
           display:block;
           text-decoration:none;
           color:#fff;
@@ -221,9 +227,7 @@ body {
     @media screen and (min-width:48em) {
          max-height:15em;
         transition:max-height 0.5s
-        
-    }
-    
+        }
    
 }
  
@@ -271,7 +275,7 @@ body {
 
 .article-container {
     margin: 20px;
-    background-color: rgb(240,240,240);
+    background-color: rgb(240,240,240); /* before was rgb(240,240,240) */
     padding: 30px 20px;
     color: #333;
     font-family: 'Fira Sans', sans-serif;
@@ -280,7 +284,7 @@ body {
 
 .container-article {
     margin: 20px;
-    background-color: rgb(240,240,240);
+    background-color: rgb(240,240,240); /* before was rgb(240,240,240) */
     padding: 30px 20px;
     color: #333;
     font-family: 'Fira Sans', sans-serif;
@@ -307,4 +311,66 @@ ul.share-buttons .sr-only {
   height: 1px;
   width: 1px;
   overflow: hidden;
+}
+
+/*Header of the article navbar posts(media)*/
+.headerArt {
+    color: #333;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+
+.headerArt {
+    background-color: rgb(240,240,240);
+}
+
+.posttext {
+    max-height: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*Graphic Art grid container*/
+
+#grid-container {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 40px;
+}
+.grid-item {
+  float: left;
+  width: 260px;
+  height: 260px;
+  margin: 20px;
+}
+.grid-item img {
+  width: 100%;
+}
+
+/*Hover over gray scale*/
+
+.grayscale{ 
+  border: 1px solid black;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);  /* For Webkit browsers */
+    filter: gray;  /* For IE 6 - 9 */
+    -webkit-transition: all .6s ease;  /* Transition for Webkit browsers */
+}
+
+.grayscale:hover { 
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    filter: none;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+.vgroup1 {
+    padding-top: 4px;
+     padding-bottom: 4px;
 }
